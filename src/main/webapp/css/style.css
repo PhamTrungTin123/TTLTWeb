@@ -3314,6 +3314,7 @@ ol {
 		width: 13px;
 		background: #7fad39;
 		font-size: 10px;
+
 		color: #ffffff;
 		line-height: 13px;
 		text-align: center;
@@ -3402,6 +3403,10 @@ ol {
 	}
 	.humberger__menu__overlay.active {
 		visibility: visible;
+	}
+	.header{
+		position: sticky;
+		top: 0;
 	}
 	.header__top {
 		display: none;

@@ -1,10 +1,11 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Forget password</title>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="../../styleforlogin.css">
+	<link rel="stylesheet" type="text/css" href="css/styleforlogin.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<link rel="icon" type="image/png" size="50" href="img/icons8-book-64.png" >
@@ -18,16 +19,21 @@
 
 					<div class="reset-form d-block">
 						<form class="reset-password-form">
-							<h4 class="mb-3">Reset Your Password</h4>
-							<p class="mb-3 text-white">
-								Please enter your email address and we will send you a password reset link
-							</p>
+							<h4 class="mb-3">Cấp lại mật khẩu cho bạn</h4>
+							<p>Thực hiện việc thay đổi mật khẩu theo 3 bước sau. Điều này sẽ giúp bạn bảo mật an toàn mật khẩu</p>
+							<ol class="list-unstyled">
+								<li><span>1. </span>Nhập địa chỉ email của bạn</li>
+								<li><span>2. </span>Hệ thống của chúng tôi sẽ gửi mã OTP tới email của bạn</li>
+								<li><span>3. </span>Nhập mã OTP bạn nhận được</li>
+							</ol>
 							<div class="form-input">
 								<span><i class="fa fa-envelope"></i></span>
-								<input type="email" placeholder="Email Address" required>
+								<input name="email" type="email" placeholder="Email Address" required>
 							</div>
-							<div class="mb-3">
-								<button type="submit" class="btn">Send Reset link</button>
+							<div class="mb-6">
+								<button type="submit" class="btn">Gửi mã OTP</button>
+								<button onclick="event.preventDefault(); window.location.href='./Login';" class="btn btn-success">Quay lại</button>
+
 							</div>
 						</form>
 					</div>

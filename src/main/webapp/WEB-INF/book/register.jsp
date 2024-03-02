@@ -4,7 +4,7 @@
 	<title>Register</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="../../styleforlogin.css">
+	<link rel="stylesheet" type="text/css" href="css/styleforlogin.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<link rel="icon" type="image/png" size="50" href="img/icons8-book-64.png" >
@@ -16,30 +16,32 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6 form-container">
 				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
-
+					<div class="logoforlogin">
+					<div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg" width="150px" height="150px"></div>
+					</div>
 					<div class="heading mb-3">
 						<h4>Create an account</h4>
 					</div>
 					<form>
 						<div class="form-input">
 							<span><i class="fa fa-user"></i></span>
-							<input type="text" placeholder="UserName" required>
+							<input name="username"  type="text" placeholder="UserName" required>
 						</div>
 						<div class="form-input">
 							<span><i class="fa fa-user"></i></span>
-							<input type="text" placeholder="Name" required>
+							<input name="name" type="text" placeholder="Name" required>
 						</div>
 						<div class="form-input">
 							<span><i class="fa fa-envelope"></i></span>
-							<input type="email" placeholder="Email Address" required>
+							<input name="email" type="email" placeholder="Email Address" required>
 						</div>
 						<div class="form-input">
 							<span><i class="fa fa-lock"></i></span>
-							<input type="password" placeholder="Password" required>
+							<input name="password" type="password" placeholder="Password" required>
 						</div>
 						<div class="form-input">
 							<span><i class="fa fa-lock"></i></span>
-							<input type="password" placeholder="Enter the Password" required>
+							<input name="enterThePassword" type="password" placeholder="Enter the Password" required>
 						</div>
 						<div class="row mb-3">
 							<div class="col-12 d-flex">
@@ -71,7 +73,7 @@
 							</div>
 						</div>
 						<div class="text-white">Already have an account?
-							<a href="logintwo.jsp" class="login-link">Login here</a>
+							<a href="./Login" class="login-link">Login here</a>
 						</div>
 					</form>
 				</div>

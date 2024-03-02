@@ -4,7 +4,7 @@
 	<title>Login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="../../styleforlogin.css">
+	<link rel="stylesheet" type="text/css" href="css/styleforlogin.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +23,8 @@
 					<div class="heading mb-3">
 						<h4 class="cssanimation sequence leFadeInLeft">Login into your account</h4>
 					</div>
+					<div style="text-align: center;" class="red" id="baoLoi">${param.error}</div>
+					<div class="red" id="baoLoi">${errorBean.getError()} </div>
 					<form>
 						<div class="form-input">
 							<span><i class="fa fa-envelope"></i></span>

@@ -26,22 +26,22 @@
                 </ul>
             </div>
             <div class="header__top__right__auth">
-                <a href="logintwo.jsp"><i class="fa fa-user"></i> Login</a>
+                <a href="./Login"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="/Index">Home</a></li>
-                <li><a href="/Shopgrid">Shop</a></li>
+                <li class="active"><a href="./Index">Home</a></li>
+                <li><a href="./Shopgrid">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="/Shopdetails">Shop Details</a></li>
-                        <li><a href="/Cart">Shoping Cart</a></li>
-                        <li><a href="/Checkout">Check Out</a></li>
-                        <li><a href="/Blogdetails">Blog Details</a></li>
+                        <li><a href="./Shop details">Shop Details</a></li>
+                        <li><a href="./Cart">Shoping Cart</a></li>
+                        <li><a href="./Checkout">Check Out</a></li>
+                        <li><a href="./Blog details">Blog Details</a></li>
                     </ul>
                 </li>
-                <li><a href="./blog.jsp">Blog</a></li>
+                <li><a href="./Blog">Blog</a></li>
                 <li><a href="./contact.jsp">Contact</a></li>
             </ul>
         </nav>
@@ -62,11 +62,11 @@
     <!-- Humberger End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
+    <header class="header"style="position: fixed;z-index: 999;width: 100%" >
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6"  >
                         <div class="header__top__left">
                             <ul>
                                 <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
@@ -74,7 +74,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6" >
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -109,18 +109,18 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li  class="active"><a href="index.jsp">Home</a></li>
-                            <li><a href="./shop-grid.jsp">Shop</a></li>
+                            <li  class="active"><a href="./Index">Home</a></li>
+                            <li><a href="./Shopgrid">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.jsp">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.jsp">Shoping Cart</a></li>
-                                    <li><a href="./checkout.jsp">Check Out</a></li>
-                                    <li><a href="./blog-details.jsp">Blog Details</a></li>
+                                    <li><a href="./Shopdetails">Shop Details</a></li>
+                                    <li><a href="./Shoppingcart">Shoping Cart</a></li>
+                                    <li><a href="./Checkout">Check Out</a></li>
+                                    <li><a href="./BlogDetail">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.jsp">Blog</a></li>
-                            <li><a href="./contact.jsp">Contact</a></li>
+                            <li><a href="./Blog">Blog</a></li>
+                            <li><a href="./Contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -128,7 +128,7 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>2</span></a></li>
-                            <li><a href="./shoping-cart.jsp"><i class="fa fa-shopping-bag"></i> <span>19</span></a></li>
+                            <li><a href="./Shoppingcart"><i class="fa fa-shopping-bag"></i> <span>19</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>
@@ -202,3 +202,13 @@
     </section>
     <!-- Hero Section End -->
     </nav>
+<style>
+    header{
+
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 1000;
+
+    }
+</style>

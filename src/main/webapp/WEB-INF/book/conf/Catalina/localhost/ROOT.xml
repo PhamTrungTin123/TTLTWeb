@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="D:\Workspace for Intellij\BookStore1\src\main\webapp">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="D:/Workspace for Intellij/BookStore1/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-java-8.0.30.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/protobuf-java-3.19.4.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/standard-1.1.2.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/org/apache/taglibs/taglibs-standard-jstlel/1.2.5/taglibs-standard-jstlel-1.2.5.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/org/apache/taglibs/taglibs-standard-spec/1.2.5/taglibs-standard-spec-1.2.5.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jstl-api-1.2.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/servlet-api-2.5.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jsp-api-2.1.jar"/>
+    <PostResources base="C:/Users/DELL/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/commons-codec-1.7.jar"/>
+    <PostResources base="D:/Workspace for Intellij/BookStore1/src/main/webapp/WEB-INF/lib/javax.activation-1.2.0.redhat-00002.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/javax.activation-1.2.0.redhat-00002.jar"/>
+    <PostResources base="D:/Workspace for Intellij/BookStore1/src/main/webapp/WEB-INF/lib/javax.mail.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/javax.mail.jar"/>
+  </Resources>
+</Context>

@@ -1,11 +1,12 @@
 .image-container{
-    background: url('image/bg1.jpg') center no-repeat;
+    background: url('../image/bg1.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
 .form-container{
-    background-color: #555555;
+    background: linear-gradient(to right, #00ff00, #c800ff);
+
     display: flex;
     justify-content: center;
 }
@@ -49,11 +50,12 @@
 }
 
 .form-box .form-input input:focus,
-.form-box .form-input input:valid{
-    outline:none;
-    border-color:#9ecaed;
-    box-shadow:0 0 10px #9ecaed;
+.form-box .form-input input:valid {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: black;
 }
+
 
 .form-box input[type="checkbox"]:not(:checked) + label:before{
     background: transparent;
@@ -125,4 +127,16 @@
 .form-box .btn-twitter:hover{
     background: #2eb7e5;
     color: #fff;
+}
+.logoforlogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoforlogin .thumbnail {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to right, #00ff00, #c800ff);
+    border-radius: 50%;
 }

@@ -12,7 +12,11 @@ import java.util.ArrayList;
 
 
 public class UserDAO implements DAOInterface<User>{
-
+    private ArrayList<User> data = new ArrayList<>();
+    public int creatId() {
+        data= selectAll();
+        return data.size();
+    }
     @Override
     public ArrayList<User> selectAll() {
         ArrayList<User> users = new ArrayList<>();
@@ -93,7 +97,121 @@ public class UserDAO implements DAOInterface<User>{
         return result;
 
     }
+    public boolean selectByUsername(String username) {
 
+        try {
+
+            Connection con = JDBCUtil.getConnection();
+
+            String sql = "SELECT * FROM users WHERE username =?";
+
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setString(1, username);
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                return true;
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+    public User selectByUsernamePassword(String username, String password) {
+        User result = null;
+
+        try {
+
+            Connection con = JDBCUtil.getConnection();
+
+            String sql = "SELECT * FROM users WHERE username = ? and password=? ";
+            System.out.println(sql);
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setString(1, username);
+            st.setString(2, password);
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                int id1 = rs.getInt("userId");
+                String usernames = rs.getString("username");
+                String passwords = rs.getString("password");
+                int role_id = rs.getInt("role_id");
+                String name = rs.getString("name");
+                Date birthday = rs.getDate("birthday");
+                String gt = rs.getString("sexual");
+                String phoneNumber = rs.getString("phoneNumber");
+                String email = rs.getString("email");
+                String avatar = rs.getString("avatar");
+                result = new User(id1, usernames, passwords,role_id, name, birthday, gt, phoneNumber, email, avatar);
+                System.out.println("nguoi dung: "+ result);
+
+            }
+            JDBCUtil.closeConnection(con);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    public boolean selectByEmail(String email) {
+
+        try {
+
+            Connection con = JDBCUtil.getConnection();
+
+            String sql = "SELECT * FROM users WHERE email =?";
+
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setString(1, email);
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                return true;
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+    public User selectByEmail2(String email) {
+        User result = null;
+
+        try {
+
+            Connection con = JDBCUtil.getConnection();
+
+            String sql = "SELECT * FROM users WHERE email = ?";
+            System.out.println(sql);
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setString(1, email);
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                String id = rs.getString("user_id");
+                int id1 = rs.getInt("userId");
+                String usernames = rs.getString("username");
+                String passwords = rs.getString("password");
+                int role_id = rs.getInt("role_id");
+                String name = rs.getString("name");
+                Date birthday = rs.getDate("birthday");
+                String gt = rs.getString("sexual");
+                String phoneNumber = rs.getString("phoneNumber");
+                String emails = rs.getString("email");
+                String avatar = rs.getString("avatar");
+                result = new User(id1, usernames, passwords,role_id, name, birthday, gt, phoneNumber, emails, avatar);
+                return result;
+
+            }
+            JDBCUtil.closeConnection(con);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
     @Override
     public int insert(User user) {
         int result = 0;
@@ -133,6 +251,7 @@ public class UserDAO implements DAOInterface<User>{
 
 
     }
+
 
     @Override
     public int insertAll(ArrayList<User> list) {
