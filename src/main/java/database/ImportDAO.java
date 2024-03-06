@@ -91,7 +91,7 @@ public class ImportDAO implements DAOInterface<Import> {
             rs.setInt(1, imported.getImportId());
             rs.setString(2, imported.getSupplier());
             rs.setString(3, imported.getNote());
-            rs.setDate(4, (Date) imported.getImportDate());
+            rs.setDate(4,  imported.getImportDate());
 
 
             result = rs.executeUpdate();

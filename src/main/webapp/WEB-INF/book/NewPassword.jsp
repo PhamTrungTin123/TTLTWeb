@@ -24,27 +24,19 @@
                                                 width="150px" height="150px"></div>
                 </div>
                 <div class="heading mb-3">
-                    <h4>Thay đổi mật khẩu cho bạn</h4>
+                    <h4>Tạo mật khẩu mới cho bạn</h4>
                 </div>
                 <div style="text-align: center;" class="red" id="baoLoi1">${errorBean.getError()}</div>
                 <div class="red" id="baoLoi2">${errorBean.getError()} </div>
-                <form action="ChangePassword" method="post">
+                <form action="NewPassword" method="post">
 
-                    <div class="form-input">
-                        <span><i class="fa fa-lock"></i></span>
-                        <input name="username" type="password" placeholder="Tên đăng nhập" required>
-                    </div>
-                    <div class="form-input">
-                        <span><i class="fa fa-lock"></i></span>
-                        <input name="password" type="password" placeholder="Mật khẩu" required>
-                    </div>
                     <div class="form-input">
                         <span><i class="fa fa-lock"></i></span>
                         <input name="newpassword" type="password" placeholder="Mật khẩu mới" required>
                     </div>
                     <div class="form-input">
                         <span><i class="fa fa-lock"></i></span>
-                        <input name="enterThePassword" type="password" placeholder="Nhập lại mật khẩu mới"
+                        <input name="enterThePassword" type="password" placeholder="Nhập lại mật khẩu"
                                required>
                     </div>
                     <div class="row mb-3">

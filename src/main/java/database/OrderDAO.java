@@ -113,7 +113,7 @@ public class OrderDAO implements DAOInterface<Order>{
             rs.setString(6, order.getAddress());
             rs.setDouble(7, order.getPayment().getPaymentId());
             rs.setString(8,order.getStatus());
-            rs.setDate(9, (Date) order.getBookingDate());
+            rs.setDate(9, order.getBookingDate());
             rs.setString(10, order.getNote());
 
 

@@ -5,11 +5,11 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "Shoppingcart", value = "/Shoppingcart")
-public class Shoppingcart extends HttpServlet {
+@WebServlet(name = "ChangePass", value = "/ChangePass")
+public class ChangePass extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/book/shopping-cart.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/book/ChangePassword.jsp").forward(request, response);
 
     }
 

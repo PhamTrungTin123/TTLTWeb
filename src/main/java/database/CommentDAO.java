@@ -102,7 +102,7 @@ public class CommentDAO implements DAOInterface<Comment> {
             rs.setInt(2,comment.getProduct().getProductId());
             rs.setInt(3,comment.getUser().getUserId());
             rs.setString(4,comment.getDetailComment());
-            rs.setDate(5, (Date) comment.getDateComment());
+            rs.setDate(5,  comment.getDateComment());
 
             result = rs.executeUpdate();
 
